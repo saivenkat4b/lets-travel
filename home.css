@@ -14,7 +14,7 @@ body {
 }
 
 /* Header */
-.header {
+/* .header {
   width: 100%;
   height: 70px;
   background: linear-gradient(to right, #fdd835, #ff4081);
@@ -24,7 +24,7 @@ body {
   padding: 0 20px;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 999; */
 
   /* fix subpixel white line */
   backface-visibility: hidden;
@@ -34,15 +34,15 @@ body {
 }
 
 /* Logo */
-.logo img.a_img {
+/* .logo img.a_img {
   height: 50px;
   width: auto;
   border-radius: 6px;
   display: block;
-}
+} */
 
 /* Nav Tabs */
-.nav-tabs {
+/* .nav-tabs {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
@@ -78,7 +78,7 @@ body {
   background-color: white;
   color: #ff4081;
 }
-
+ */
 /* header end  */
 
 
