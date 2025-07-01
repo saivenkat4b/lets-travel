@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Travel</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <header id="top" class="header">
+        <div class="logo">
+            <img class="a_img" src="https://t3.ftcdn.net/jpg/05/77/39/14/360_F_577391470_VnPj8YMcMr3gxZLEuyHhhuTtKruMCfjW.jpg">
+
+        </div>
+
+        <nav class="nav-tabs">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="card.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+        </ul>
+        </nav>
+
+
+    </header>
+
+<!-- travel carousel -->
+
+    <div id="carousel-ex" class="carousel slide">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://121clicks.com/wp-content/uploads/2024/09/best-top-travel-landscape-photography-featured2.jpg" class="d-block w-100" alt="mclaren">
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://imgs.search.brave.com/aPSjXGMO4C0DdR6bhkIeJ0YaxxM3-H_5v-38bZhlmAU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waG90/by12b2l0dXJlLm1v/dG9ybGVnZW5kLmNv/bS9tZWQvbWNsYXJl/bi1wMS12OC0zLTgt/YmktdHVyYm8tMTI5/MDI2LmpwZw" class="d-block w-100" alt="mclaren">
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://imgs.search.brave.com/XT0PxoPXqs44XOms6mNHkE7kIAdO3xQT1Vk6eHgqcTw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW90b3IxLmNvbS9p/bWFnZXMvbWdsL2tv/VzdaUS9zNi9tY2xh/cmVuLXAxLXNwaWRl/ci1ieS1sYW56YW50/ZS5qcGc" class="d-block w-100" alt="mclaren">
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://imgs.search.brave.com/mj_aL2_OPntg_rahxKWNwL2wlndLFx2HSbE916mwiUM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW90b3IxLmNvbS9p/bWFnZXMvbWdsL0pK/VkVBL3M2L21jbGFy/ZW4tNzIwcy5qcGc" class="d-block w-100" alt="mclaren">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-ex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-ex" data-bs-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Plan your journey</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8/hot-deal.png" class="disp_img" alt="Top choice"></div>
+                    <h3>Top choice</h3>
+                </div>
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8/phone (1).png" class="disp_img" alt="Beaches"></div>
+                    <h3>Beaches</h3>
+                </div>
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8//web-traffic.png" class="disp_img" alt="Mountains"></div>
+                    <h3>Mountains</h3>
+                </div>
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8//tv.png" class="disp_img" alt="Rivers"></div>
+                    <h3>Rivers</h3>
+                </div>
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8//protective-equipment.png" class="disp_img" alt="Ooty"></div>
+                    <h3>Ooty</h3>
+                </div>
+                <div class="category-item">
+                     <div class="category-icon"><img src="assests/Icons8//smartwatch-app.png" class="disp_img" alt="DFesserts"></div>
+                    <h3>Desserts</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="booking-form">
+    <h2>Travel Booking</h2>
+    <form>
+        <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" placeholder="Enter departure city">
+        </div>
+        
+        <div class="form-group">
+            <label for="to">To</label>
+            <input type="text" id="to" placeholder="Enter destination city">
+        </div>
+        
+        <div class="form-group">
+            <label for="date">Travel Date</label>
+            <input type="date" id="date">
+        </div>
+        
+        <button type="submit" class="submit-btn">Search Trips</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 70px; /* prevent header overlap */
+  background: linear-gradient(to right, #fdd835, #ff4081);
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to right, #fdd835, #ff4081);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  /* fix subpixel white line */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  border-bottom: none;
+}
+
+/* Logo */
+.logo img.a_img {
+  height: 50px;
+  width: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Nav Tabs */
+.nav-tabs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  border: none !important;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  align-items: center;
+  margin-right: 20px;
+  border: none !important;
+  background: transparent !important;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  border: none !important;
+  background: transparent;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active {
+  background-color: white;
+  color: #ff4081;
+}
+
+/* header end  */
+
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.carousel-inner {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* Categories Section */
+.categories {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.category-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background: #272517;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Booking Form */
+.booking-form {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.booking-form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.booking-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid #fdd835;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #ff4081;
+}
+
+.submit-btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #fdd835, #ff4081);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #ff4081, #fdd835);
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  .booking-form form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

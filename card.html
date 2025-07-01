@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Package Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+        .package-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        .package-card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating .badge {
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: grey;
+            font-size: 14px;
+        }
+
+        .btn-custom {
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .price-text {
+            font-size: 14px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 col-md-3 col-sm-6">
+                <div class="package-card card">
+                    <img src="https://images2.alphacoders.com/136/1366009.jpeg" class="card-img-top" alt="Marina">
+                    <div class="card-body p-2">
+                        <div class="rating mb-2">
+                            <span class="badge bg-success">9.4</span>
+                            <span class="text-success fw-bold ms-1" style="font-size: 12px;">Excellent</span>
+                            <span class="text-muted small ms-2">(562 reviews)</span>
+                        </div>
+                        <h6 class="card-title mb-1">Marina Beach Resort</h6>
+                        <p class="card-text text-muted" style="font-size: 12px;">Luxurious stay with ocean views and
+                            beach access.</p>
+                        <div class="mt-2">
+                            <p class="mb-1" style="font-size: 12px;">
+                                From <strong>$157/night</strong>
+                            </p>
+                            <div>
+                                <span class="old-price">$490</span>
+                                <span class="text-success fw-bold ms-2">$394</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 d-flex justify-content-between">
+                            <button class="btn btn-outline-info btn-sm" style="font-size: 11px;">Member Price</button>
+                            <button class="btn btn-outline-success btn-sm" style="font-size: 12px;">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-6">
+                <div class="package-card card">
+                    <img src="https://images5.alphacoders.com/361/361643.jpg" class="card-img-top" alt="Maldives">
+                    <div class="card-body p-2">
+                        <div class="rating mb-2">
+                            <span class="badge bg-success">9.4</span>
+                            <span class="text-success fw-bold ms-1" style="font-size: 12px;">Excellent</span>
+                            <span class="text-muted small ms-2">(786 reviews)</span>
+                        </div>
+                        <h6 class="card-title mb-1">Maldives Coral Retreat</h6>
+                        <p class="card-text text-muted" style="font-size: 12px;">Crystal-clear waters, overwater villas,
+                            and relaxation await.</p>
+                        <div class="mt-2">
+                            <p class="mb-1" style="font-size: 12px;">From <strong>$157/night</strong></p>
+                            <span class="old-price">$780</span>
+                            <span class="text-success fw-bold ms-2">$562</span>
+                        </div>
+                        <div class="mt-2 d-flex justify-content-between">
+                            <button class="btn btn-outline-info btn-sm" style="font-size: 11px;">Member Price</button>
+                            <button class="btn btn-outline-success btn-sm" style="font-size: 12px;">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-6">
+                <div class="package-card card">
+                    <img src="https://images.alphacoders.com/467/467185.jpg" class="card-img-top" alt="Himalayan">
+                    <div class="card-body p-2">
+                        <div class="rating mb-2">
+                            <span class="badge bg-success">9.4</span>
+                            <span class="text-success fw-bold ms-1" style="font-size: 12px;">Excellent</span>
+                            <span class="text-muted small ms-2">(512 reviews)</span>
+                        </div>
+                        <h6 class="card-title mb-1">Himalayan Peaks Lodge</h6>
+                        <p class="card-text text-muted" style="font-size: 12px;">Snow-capped mountains, cozy cabins, and
+                            panoramic trails.</p>
+                        <div class="mt-2">
+                            <p class="mb-1" style="font-size: 12px;">From <strong>$157/night</strong></p>
+                            <span class="old-price">$897</span>
+                            <span class="text-success fw-bold ms-2">$678</span>
+                        </div>
+                        <div class="mt-2 d-flex justify-content-between">
+                            <button class="btn btn-outline-info btn-sm" style="font-size: 11px;">Member Price</button>
+                            <button class="btn btn-outline-success btn-sm" style="font-size: 12px;">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-2">
+                <div class="package-card card">
+                    <img src="https://images2.alphacoders.com/121/121132.jpg" alt="Marina" class="card-img-top">
+
+                    <div class="card-body p-2">
+
+                        <div class="rating mb-2">
+                            <span class="badge bg-success">9.4</span>
+                            <span class="text-success fw-bold ms-1" style="font-size: 12px;">Excellent</span>
+                            <span class="text-muted small ms-2">(980 reviews)</span>
+                        </div>
+
+                        <h6 class="card-title mb-1">Dubai Skyline Suites</h6>
+                        <p class="card-text text-muted" style="font-size: 12px;">Premium city stay with rooftop views,
+                            luxury shopping</p>
+
+                        <div class="mt-2">
+                            <div>
+                                <p class="mb-1" style="font-size: 12px;">From <strong>$157/night</strong></p>
+                                <span class="old-price text-muted"
+                                    style="font-size: 12px; text-decoration: line-through;">$490</span>
+                                <span class="text-success fw-bold ms-2" style="font-size: 14px;">$394</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 d-flex justify-content-between">
+                            <button class="btn btn-outline-info btn-sm"
+                                style="padding: 2px 6px; font-size: 11px;">Member
+                                Price</button>
+                            <button class="btn btn-outline-success btn-sm"
+                                style="padding: 4px 10px; font-size: 12px;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-2">
+                <div class="package-card card">
+                    <img src="https://picfiles.alphacoders.com/273/273665.jpg" alt="Marina" class="card-img-top"
+                        style="height: 150px; object-fit: cover;">
+
+                    <div class="card-body p-2">
+
+                        <div class="rating mb-2">
+                            <span class="badge bg-success">9.4</span>
+                            <span class="text-success fw-bold ms-1" style="font-size: 12px;">Excellent</span>
+                            <span class="text-muted small ms-2">(1023 reviews)</span>
+                        </div>
+
+                        <h6 class="card-title mb-1">Goa Sunscape Resort</h6>
+                        <p class="card-text text-muted" style="font-size: 12px;">Beachfront fun with tropical vibes,
+                            music festivals, and relaxing shacks.</p>
+
+                        <div class="mt-2">
+                            <div>
+                                <p class="mb-1" style="font-size: 12px;">From <strong>$157/night</strong></p>
+                                <span class="old-price text-muted"
+                                    style="font-size: 12px; text-decoration: line-through;">$1045</span>
+                                <span class="text-success fw-bold ms-2" style="font-size: 14px;">$999</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 d-flex justify-content-between">
+                            <button class="btn btn-outline-info btn-sm"
+                                style="padding: 2px 6px; font-size: 11px;">Member
+                                Price</button>
+                            <button class="btn btn-outline-success btn-sm"
+                                style="padding: 4px 10px; font-size: 12px;">Book</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
