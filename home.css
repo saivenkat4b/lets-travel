@@ -84,7 +84,6 @@ body {
 
 /* Carousel */
 
-/* Carousel */
 .carousel {
   width: 100%;
   height: auto;
@@ -114,6 +113,8 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Carousel  end*/
+
 
 /* Categories Section */
 .categories {
