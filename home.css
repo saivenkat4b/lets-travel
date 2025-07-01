@@ -27,11 +27,11 @@ body {
   z-index: 999; */
 
   /* fix subpixel white line */
-  backface-visibility: hidden;
+/*   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateZ(0);
   border-bottom: none;
-}
+} */
 
 /* Logo */
 /* .logo img.a_img {
